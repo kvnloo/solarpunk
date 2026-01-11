@@ -1,0 +1,5 @@
+{
+  "name": "Solarpunk Digital Twin",
+  "description": "An immersive Apple-style scrollytelling reveal of a Solarpunk home using React Three Fiber.",
+  "requestFramePermissions": []
+}

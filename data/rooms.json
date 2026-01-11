@@ -1,0 +1,328 @@
+{
+  "rooms": {
+    "exterior": {
+      "id": "exterior",
+      "name": "The Algorithmic Home",
+      "subtitle": "Your Personal Performance Sanctuary",
+      "image": "/rooms/exterior-day.jpg",
+      "imageNight": "/rooms/exterior-night.jpg",
+      "zone": null,
+      "description": "A solarpunk mansion where every room is designed to optimize human performance. Click on any room to explore.",
+      "hotspots": [
+        {
+          "id": "bedroom-nav",
+          "label": "Bedroom",
+          "coords": [680, 320, 780, 420],
+          "shape": "rect",
+          "action": "navigate",
+          "target": "bedroom",
+          "preview": "Sleep optimization suite"
+        },
+        {
+          "id": "office-nav",
+          "label": "Office",
+          "coords": [100, 150, 250, 280],
+          "shape": "rect",
+          "action": "navigate",
+          "target": "office",
+          "preview": "Deep work environment"
+        },
+        {
+          "id": "kitchen-nav",
+          "label": "Kitchen",
+          "coords": [300, 400, 450, 520],
+          "shape": "rect",
+          "action": "navigate",
+          "target": "kitchen",
+          "preview": "Nutrition laboratory"
+        },
+        {
+          "id": "living-nav",
+          "label": "Living Room",
+          "coords": [500, 380, 650, 500],
+          "shape": "rect",
+          "action": "navigate",
+          "target": "living-room",
+          "preview": "Connection hub"
+        },
+        {
+          "id": "system-status",
+          "label": "System Status",
+          "coords": [750, 50, 900, 120],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "The System",
+            "subtitle": "Algorithmic Feedback Loop",
+            "body": "The home's AI continuously monitors biometric data (sleep, HRV, productivity) and adjusts environmental factors (lighting, temperature, sound) to optimize your performance without requiring willpower.",
+            "science": "Based on principles from behavioral design, circadian biology, and environmental psychology."
+          }
+        }
+      ]
+    },
+    "bedroom": {
+      "id": "bedroom",
+      "name": "The AEON Sanctuary",
+      "subtitle": "Sleep Optimization Suite",
+      "image": "/rooms/bedroom-sleep.jpg",
+      "imageNight": "/rooms/bedroom-dark.jpg",
+      "zone": "Biological Core",
+      "description": "Your bedroom becomes a sleep laboratory. Thermal regulation, circadian lighting, and biometric tracking work in harmony.",
+      "hotspots": [
+        {
+          "id": "thermal-mattress",
+          "label": "Thermal Grid Mattress",
+          "coords": [300, 350, 600, 500],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Thermal Grid Mattress",
+            "subtitle": "8Sleep-Style Bi-Phasic Cooling",
+            "body": "The mattress actively regulates temperature throughout the night. Cools to 65°F for deep sleep initiation, then gradually warms before wake time for a natural cortisol rise.",
+            "science": "Body temperature drops 2-3°F during deep sleep. External cooling accelerates this process, increasing deep sleep duration by up to 20%.",
+            "specs": ["Individual zone control", "Haptic wake-up vibration", "Oura Ring integration"]
+          }
+        },
+        {
+          "id": "hrv-display",
+          "label": "HRV Monitor",
+          "coords": [80, 320, 200, 400],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Real-Time HRV Display",
+            "subtitle": "Heart Rate Variability Tracking",
+            "body": "A bedside display shows your current HRV, sleep score, and recovery status. The system uses this data to adjust next-day recommendations.",
+            "science": "HRV is the gold standard for measuring parasympathetic recovery. Higher HRV correlates with better cognitive performance and lower all-cause mortality.",
+            "specs": ["Continuous monitoring", "Trend analysis", "Training readiness score"]
+          }
+        },
+        {
+          "id": "red-light",
+          "label": "Red Light Therapy",
+          "coords": [700, 200, 800, 400],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Red Light Therapy Panels",
+            "subtitle": "Infrared Recovery System",
+            "body": "Integrated panels in the bathroom area provide red and near-infrared light therapy for skin health, mitochondrial function, and circadian support.",
+            "science": "Red light (630-660nm) and near-infrared (810-850nm) wavelengths penetrate tissue to stimulate ATP production in mitochondria, accelerating cellular repair.",
+            "specs": ["Medical-grade LEDs", "10-minute protocols", "Morning and evening modes"]
+          }
+        },
+        {
+          "id": "blackout-system",
+          "label": "Blackout System",
+          "coords": [600, 100, 750, 250],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Automated Blackout System",
+            "subtitle": "Complete Light Elimination",
+            "body": "Motorized blackout blinds and light-blocking curtains create complete darkness for optimal melatonin production. The system gradually introduces light in the morning.",
+            "science": "Even small amounts of light (phone LED, digital clock) can suppress melatonin by up to 50%. True darkness is essential for deep, restorative sleep.",
+            "specs": ["Zero light leakage", "Sunrise simulation", "Voice/app control"]
+          }
+        }
+      ]
+    },
+    "office": {
+      "id": "office",
+      "name": "The Sovereign Studio",
+      "subtitle": "Deep Work Environment",
+      "image": "/rooms/office-focus.jpg",
+      "zone": "Cognitive Engine",
+      "description": "Your office anticipates your cognitive needs. Environmental distractions vanish. Deep work becomes your default state.",
+      "hotspots": [
+        {
+          "id": "deep-work-timer",
+          "label": "Deep Work Timer",
+          "coords": [50, 200, 200, 320],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "90-Minute Focus Blocks",
+            "subtitle": "Ultradian Rhythm Optimization",
+            "body": "A large display shows your current focus block, remaining time, and session count. The room's environment shifts to support focus: phone blockers activate, lighting shifts to electric blue.",
+            "science": "Humans operate in 90-minute ultradian cycles. Matching work sessions to these natural rhythms maximizes cognitive output and reduces mental fatigue.",
+            "specs": ["Automatic environment adjustment", "Break reminders", "Focus history tracking"]
+          }
+        },
+        {
+          "id": "knowledge-graph",
+          "label": "Knowledge Graph",
+          "coords": [350, 150, 600, 350],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Obsidian Knowledge Graph",
+            "subtitle": "Second Brain Visualization",
+            "body": "A transparent OLED display shows your personal knowledge graph - all notes, ideas, and connections from your second brain system.",
+            "science": "Externalizing cognitive load to a trusted system frees working memory for creative thinking. Visual graphs help identify non-obvious connections.",
+            "specs": ["Real-time sync", "Touch navigation", "Daily note prompts"]
+          }
+        },
+        {
+          "id": "encoding-station",
+          "label": "Encoding Station",
+          "coords": [700, 150, 850, 350],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Feynman Technique Boards",
+            "subtitle": "Active Recall Learning",
+            "body": "Analog whiteboards for teaching concepts to yourself. The act of explaining forces deep understanding and reveals gaps in knowledge.",
+            "science": "Active recall strengthens memory 3-5x more effectively than passive review. The Feynman Technique forces elaboration, the key to long-term retention.",
+            "specs": ["Writable glass surfaces", "Photo capture for archiving", "Spaced repetition integration"]
+          }
+        },
+        {
+          "id": "standing-desk",
+          "label": "Standing Desk",
+          "coords": [200, 400, 400, 550],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Standing Desk Default",
+            "subtitle": "Movement-First Workspace",
+            "body": "The desk defaults to standing height. You consciously choose to sit, rather than defaulting to sedentary work. Anti-fatigue mats and balance boards add micro-movement.",
+            "science": "Standing burns 50+ more calories per hour than sitting. More importantly, it increases alertness, blood flow to the brain, and reduces afternoon energy dips.",
+            "specs": ["Memory height presets", "Sit/stand reminders", "Under-desk treadmill option"]
+          }
+        },
+        {
+          "id": "focus-lighting",
+          "label": "Focus Lighting",
+          "coords": [10, 50, 900, 150],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Electric Blue Spectrum",
+            "subtitle": "Cognitive Enhancement Lighting",
+            "body": "During focus blocks, the room shifts to a cool blue spectrum (6500K) that promotes alertness and cognitive performance. At break time, it shifts to warmer tones.",
+            "science": "Blue light (460-480nm) suppresses melatonin and activates intrinsically photosensitive retinal ganglion cells, increasing alertness. Strategic use during work hours enhances focus.",
+            "specs": ["Circadian-aware automation", "Task-specific presets", "Smooth transitions"]
+          }
+        }
+      ]
+    },
+    "kitchen": {
+      "id": "kitchen",
+      "name": "The Nutrition Lab",
+      "subtitle": "Blue Zones x Blueprint Protocol",
+      "image": "/rooms/kitchen-farm.jpg",
+      "zone": "Biological Core",
+      "description": "A vertical aeroponic farm grows your food. A visual food pyramid triggers appetite for the right nutrients. Frictionless healthy eating.",
+      "hotspots": [
+        {
+          "id": "vertical-farm",
+          "label": "Mars-Earth Vertical Farm",
+          "coords": [50, 100, 450, 550],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "High-Pressure Aeroponics Farm",
+            "subtitle": "Zone A & Zone B Growing System",
+            "body": "Zone A grows daily essentials: microgreens, leafy greens, and herbs. Zone B handles 'hacks': sprouted lentils, fermented foods, and specialty items like mushrooms.",
+            "science": "Aeroponics uses 95% less water than soil farming and produces 3x faster growth. Harvesting at peak freshness maximizes nutrient density.",
+            "specs": ["Automated nutrient dosing", "LED grow lights", "Harvest notifications"]
+          }
+        },
+        {
+          "id": "food-display",
+          "label": "Nutrition Display",
+          "coords": [500, 200, 850, 500],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Visual Food Pyramid",
+            "subtitle": "Maximalist Bio-Architecture",
+            "body": "Healthy foods are displayed like art. The visual presentation triggers appetite for nutrient-dense options before you even feel hungry.",
+            "science": "Food choices are 80% driven by environment, not willpower. Making healthy options visible and beautiful rewires default eating behavior.",
+            "specs": ["Tiered glass display", "Temperature zones", "Rotation suggestions"]
+          }
+        },
+        {
+          "id": "supplement-station",
+          "label": "Supplement Protocol",
+          "coords": [700, 50, 850, 180],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Organized Supplement Stack",
+            "subtitle": "Protocol-Based Supplementation",
+            "body": "Morning and evening supplement protocols are pre-organized. Dispenser tracks doses and adjusts recommendations based on blood test results.",
+            "science": "Consistent supplementation requires system design. Removing friction (measuring, remembering) increases adherence from ~30% to >90%.",
+            "specs": ["Morning/evening separation", "Dosage tracking", "Refill automation"]
+          }
+        }
+      ]
+    },
+    "living-room": {
+      "id": "living-room",
+      "name": "The Connection Hub",
+      "subtitle": "Digital Detox Zone",
+      "image": "/rooms/living-room-social.jpg",
+      "zone": "Social & Spiritual",
+      "description": "Spaces designed for human connection. Golden hour lighting, conversation pits, and phone-free zones bring people together.",
+      "hotspots": [
+        {
+          "id": "conversation-pit",
+          "label": "Sunken Conversation Pit",
+          "coords": [200, 300, 700, 550],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Vulnerability Architecture",
+            "subtitle": "Designed for Deep Connection",
+            "body": "The sunken seating arrangement creates physical intimacy and removes hierarchical positioning. Circular layout ensures everyone can make eye contact.",
+            "science": "Physical environment shapes social dynamics. Lower seating creates psychological safety. Circular arrangements promote equal participation in conversation.",
+            "specs": ["Modular configuration", "Acoustic optimization", "Integrated heating"]
+          }
+        },
+        {
+          "id": "golden-lighting",
+          "label": "Golden Hour Lighting",
+          "coords": [10, 50, 200, 200],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Warm Orange Spectrum",
+            "subtitle": "Oxytocin-Promoting Environment",
+            "body": "Evening lighting mimics golden hour (2700K-3000K). The warm spectrum promotes relaxation, reduces cortisol, and creates an environment conducive to bonding.",
+            "science": "Warm light signals the brain to transition from alertness to relaxation. Combined with social interaction, it enhances oxytocin release.",
+            "specs": ["Automated sunset transition", "Candlelight mode", "Fire-flicker effect"]
+          }
+        },
+        {
+          "id": "detox-zone",
+          "label": "Digital Detox Zone",
+          "coords": [600, 50, 850, 180],
+          "shape": "rect",
+          "action": "modal",
+          "content": {
+            "title": "Phone-Free Space",
+            "subtitle": "Blue Zones Social Principle",
+            "body": "A Faraday-style phone locker at the room entrance. When phones go in, the 'Digital Detox Active' indicator lights up. Presence becomes the norm.",
+            "science": "Blue Zones research shows strong social connections are a top predictor of longevity. Phone presence—even when not used—reduces conversation quality by 30%.",
+            "specs": ["Charging station", "Emergency bypass", "Timer options"]
+          }
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "order": ["exterior", "bedroom", "office", "kitchen", "living-room"],
+    "zones": {
+      "Biological Core": ["bedroom", "kitchen"],
+      "Cognitive Engine": ["office"],
+      "Social & Spiritual": ["living-room"]
+    }
+  },
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-10",
+    "note": "Hotspot coordinates are placeholders - will be calibrated to actual images"
+  }
+}
